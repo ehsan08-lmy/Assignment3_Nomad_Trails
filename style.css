@@ -1,0 +1,433 @@
+/* =========================================================
+   Nomad Trails — Assignment #3
+   Custom CSS is loaded after Bootstrap.
+   ========================================================= */
+
+:root {
+    --ink: #17221c;
+    --muted: #66736b;
+    --paper: #f6f5ef;
+    --cream: #ece8da;
+    --forest: #193b2d;
+    --olive: #657b48;
+    --sand: #d7b47a;
+    --line: rgba(23, 34, 28, 0.12);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    color: var(--ink);
+    background: var(--paper);
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+section {
+    scroll-margin-top: 72px;
+}
+
+.site-nav {
+    background: rgba(20, 35, 29, 0.97);
+}
+
+.navbar-brand {
+    letter-spacing: 0.12em;
+}
+
+.nav-link {
+    font-size: 0.9rem;
+}
+
+/* ---------- Hero ---------- */
+
+.hero-section {
+    color: #fff;
+    background:
+        radial-gradient(circle at 78% 25%, rgba(216, 181, 117, 0.25), transparent 28%),
+        linear-gradient(135deg, #173b2c 0%, #234f3c 58%, #48634d 100%);
+}
+
+.min-vh-75 {
+    min-height: 76vh;
+}
+
+.eyebrow {
+    letter-spacing: 0.16em;
+    font-size: 0.75rem;
+    font-weight: 800;
+}
+
+.eyebrow.dark {
+    color: #637361;
+}
+
+.hero-section h1 {
+    line-height: 0.98;
+}
+
+.hero-section h1 span {
+    color: #e2c48c;
+}
+
+.hero-copy {
+    max-width: 650px;
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.mobile-note {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.hero-art {
+    position: relative;
+    min-height: 390px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 28px;
+    background:
+        linear-gradient(180deg, #345b5b 0%, #71856a 52%, #c6a16c 100%);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.18);
+}
+
+.sun {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 54px;
+    right: 62px;
+    border-radius: 50%;
+    background: #e4c78e;
+    box-shadow: 0 0 55px rgba(228, 199, 142, 0.55);
+}
+
+.mountain {
+    position: absolute;
+    left: -8%;
+    width: 116%;
+    height: 48%;
+    bottom: 18%;
+    clip-path: polygon(0 100%, 16% 46%, 28% 73%, 45% 18%, 59% 66%, 73% 30%, 88% 70%, 100% 38%, 100% 100%);
+}
+
+.mountain-back {
+    background: #4b6659;
+    opacity: 0.85;
+}
+
+.mountain-front {
+    bottom: 0;
+    height: 58%;
+    background: #263f36;
+}
+
+.steppe-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 25%;
+    background: #1e382e;
+}
+
+.hero-badge {
+    position: absolute;
+    left: 28px;
+    bottom: 28px;
+    display: grid;
+    gap: 2px;
+    padding: 16px 18px;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 14px;
+    background: rgba(12, 30, 24, 0.62);
+    backdrop-filter: blur(8px);
+}
+
+.hero-badge span {
+    color: #dfc28b;
+    font-size: 0.72rem;
+    font-weight: 800;
+}
+
+.hero-badge strong {
+    font-size: 1.05rem;
+}
+
+.hero-badge small {
+    color: rgba(255,255,255,0.68);
+}
+
+/* =========================================================
+   TASK 1 — CUSTOM CSS ONLY
+   No Bootstrap classes are used for the destination layout.
+   Mobile-first: 1 → 2 → 3 columns.
+   ========================================================= */
+
+.destinations-section {
+    background: var(--paper);
+    padding: 80px 0;
+}
+
+.custom-container {
+    width: 92%;
+    margin: 0 auto;
+}
+
+.section-heading {
+    margin-bottom: 36px;
+}
+
+.section-heading h2,
+.section-title {
+    font-weight: 800;
+    letter-spacing: -0.03em;
+}
+
+.section-heading h2 {
+    font-size: 2.35rem;
+    line-height: 1.05;
+    margin: 10px 0 14px;
+}
+
+.section-heading > p:last-child {
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+/* Base/mobile: one card per row */
+.destination-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.destination-card {
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 12px 30px rgba(31, 45, 37, 0.07);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 38px rgba(31, 45, 37, 0.12);
+}
+
+.destination-visual {
+    min-height: 165px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.8rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.visual-1 { background: linear-gradient(135deg, #9a6248, #d7a26e); }
+.visual-2 { background: linear-gradient(135deg, #3f7066, #9cc2b1); }
+.visual-3 { background: linear-gradient(135deg, #8d7651, #d5b678); }
+.visual-4 { background: linear-gradient(135deg, #3d5f67, #a9c1bc); }
+.visual-5 { background: linear-gradient(135deg, #385f4b, #9bb68b); }
+.visual-6 { background: linear-gradient(135deg, #647247, #c4b77b); }
+
+.destination-content {
+    padding: 22px;
+}
+
+.card-number {
+    color: #78877b;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+}
+
+.destination-content h3 {
+    margin: 7px 0 8px;
+    font-size: 1.25rem;
+}
+
+.destination-content p {
+    color: var(--muted);
+    font-size: 0.93rem;
+    line-height: 1.6;
+    margin-bottom: 14px;
+}
+
+.destination-content a {
+    color: var(--forest);
+    font-size: 0.88rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+/* First breakpoint: 2 columns on tablet + spacing change */
+@media (min-width: 576px) {
+    .destination-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .section-heading {
+        margin-bottom: 44px;
+    }
+
+    .destination-visual {
+        min-height: 180px;
+    }
+}
+
+/* Second breakpoint: 3 columns on laptop + heading/spacing change */
+@media (min-width: 992px) {
+    .destination-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 28px;
+    }
+
+    .section-heading h2 {
+        font-size: 3.1rem;
+    }
+
+    .destinations-section {
+        padding: 104px 0;
+    }
+
+    .destination-visual {
+        min-height: 190px;
+    }
+}
+
+/* ---------- Task 2 supporting custom styles ---------- */
+
+.story-section {
+    background: #fff;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+.story-panel {
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 28px;
+    border-radius: 24px;
+    color: #fff;
+    background:
+        radial-gradient(circle at 70% 25%, rgba(222, 194, 139, 0.34), transparent 20%),
+        linear-gradient(145deg, #1b4030, #49654d);
+    box-shadow: 0 22px 55px rgba(20, 48, 36, 0.15);
+}
+
+.story-top,
+.story-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    color: rgba(255,255,255,0.62);
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+}
+
+.story-quote {
+    max-width: 470px;
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    line-height: 0.98;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+.desktop-tip {
+    color: #657269;
+    font-size: 0.82rem;
+    border-top: 1px solid var(--line);
+    padding-top: 18px;
+}
+
+.experiences-section {
+    background: #ece9df;
+}
+
+.bootstrap-heading {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.experience-card {
+    border-radius: 18px;
+    transition: transform 0.2s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-4px);
+}
+
+.experience-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+    font-size: 3.5rem;
+    background: linear-gradient(135deg, #d8d0bc, #eef0df);
+}
+
+.experience-card a {
+    color: var(--forest);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.faq-section {
+    background: var(--paper);
+}
+
+.accordion-item {
+    border-color: var(--line);
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--forest);
+    background: #e9efe8;
+    box-shadow: none;
+}
+
+.contact-strip {
+    padding: 20px 22px;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: #fff;
+}
+
+.contact-strip strong {
+    display: block;
+    margin-top: 4px;
+}
+
+.site-footer {
+    color: rgba(255,255,255,0.65);
+    background: #15271f;
+    font-size: 0.8rem;
+}
+
+/* Small-screen refinement */
+@media (max-width: 575.98px) {
+    .hero-section h1 {
+        font-size: 2.7rem;
+    }
+
+    .hero-art {
+        min-height: 300px;
+    }
+
+    .destinations-section,
+    .story-section,
+    .experiences-section,
+    .faq-section {
+        padding-top: 10px;
+    }
+}

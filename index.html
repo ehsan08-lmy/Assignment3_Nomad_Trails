@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nomad Trails — a responsive Kazakhstan travel guide built with CSS media queries and Bootstrap 5.3.">
+    <title>Nomad Trails | Kazakhstan Travel Guide</title>
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- My CSS comes after Bootstrap so custom rules can override it -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Bootstrap navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top site-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">NOMAD TRAILS</a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#story">Our Story</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- HERO: Bootstrap container/row/columns -->
+        <section id="home" class="hero-section">
+            <div class="container py-5">
+                <div class="row align-items-center g-4 min-vh-75">
+                    <div class="col-12 col-lg-7 order-2 order-lg-1">
+                        <p class="eyebrow mb-3">KAZAKHSTAN • BEYOND THE ORDINARY</p>
+                        <h1 class="display-3 fw-bold">Follow the horizon.<br><span>Find your route.</span></h1>
+                        <p class="lead hero-copy mt-4">
+                            A compact guide to dramatic landscapes, modern cities and unforgettable
+                            nomad-inspired experiences across Kazakhstan.
+                        </p>
+                        <div class="d-flex flex-wrap gap-3 mt-4">
+                            <a class="btn btn-light btn-lg px-4" href="#destinations">Explore places</a>
+                            <a class="btn btn-outline-light btn-lg px-4" href="#experiences">See experiences</a>
+                        </div>
+
+                        <!-- Shown only on small screens -->
+                        <p class="small mobile-note d-lg-none mt-4 mb-0">
+                            Tip for phone users: use the menu button above to jump between sections.
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-lg-5 order-1 order-lg-2">
+                        <div class="hero-art" aria-label="Illustration of mountains and the steppe">
+                            <div class="sun"></div>
+                            <div class="mountain mountain-back"></div>
+                            <div class="mountain mountain-front"></div>
+                            <div class="steppe-line"></div>
+                            <div class="hero-badge">
+                                <span>01</span>
+                                <strong>Open skies</strong>
+                                <small>Endless steppe</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TASK 1: custom CSS only in this section -->
+        <section id="destinations" class="destinations-section">
+            <div class="custom-container">
+                <div class="section-heading">
+                    <p class="eyebrow dark">TASK 1 • HAND-BUILT RESPONSIVE SECTION</p>
+                    <h2>Places worth taking the long way to.</h2>
+                    <p>
+                        These destination cards use only our own Grid and mobile-first
+                        <code>@media (min-width: ...)</code> rules.
+                    </p>
+                </div>
+
+                <div class="destination-grid">
+                    <article class="destination-card">
+                        <div class="destination-visual visual-1"><span>🏔️</span></div>
+                        <div class="destination-content">
+                            <span class="card-number">01</span>
+                            <h3>Charyn Canyon</h3>
+                            <p>Layered red cliffs, wide trails and a landscape that feels almost unreal.</p>
+                            <a href="#experiences">Discover →</a>
+                        </div>
+                    </article>
+
+                    <article class="destination-card">
+                        <div class="destination-visual visual-2"><span>🏞️</span></div>
+                        <div class="destination-content">
+                            <span class="card-number">02</span>
+                            <h3>Big Almaty Lake</h3>
+                            <p>High-altitude mountain scenery with clear water and quiet alpine air.</p>
+                            <a href="#experiences">Discover →</a>
+                        </div>
+                    </article>
+
+                    <article class="destination-card">
+                        <div class="destination-visual visual-3"><span>🌊</span></div>
+                        <div class="destination-content">
+                            <span class="card-number">03</span>
+                            <h3>Mangystau</h3>
+                            <p>Strange rock formations, open desert and enormous skies on the Caspian side.</p>
+                            <a href="#experiences">Discover →</a>
+                        </div>
+                    </article>
+
+                    <article class="destination-card">
+                        <div class="destination-visual visual-4"><span>🏙️</span></div>
+                        <div class="destination-content">
+                            <span class="card-number">04</span>
+                            <h3>Astana</h3>
+                            <p>Bold architecture, wide avenues and a fast-changing capital in the steppe.</p>
+                            <a href="#experiences">Discover →</a>
+                        </div>
+                    </article>
+
+                    <article class="destination-card">
+                        <div class="destination-visual visual-5"><span>🌲</span></div>
+                        <div class="destination-content">
+                            <span class="card-number">05</span>
+                            <h3>Kolsai Lakes</h3>
+                            <p>Forest-covered mountains and cool lakes connected by scenic hiking routes.</p>
+                            <a href="#experiences">Discover →</a>
+                        </div>
+                    </article>
+
+                    <article class="destination-card">
+                        <div class="destination-visual visual-6"><span>🦅</span></div>
+                        <div class="destination-content">
+                            <span class="card-number">06</span>
+                            <h3>Nomad Steppe</h3>
+                            <p>Open grasslands, traditional hospitality and a slower rhythm under the sky.</p>
+                            <a href="#experiences">Discover →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- TASK 2: Bootstrap two-column section with order -->
+        <section id="story" class="story-section">
+            <div class="container py-5">
+                <div class="row align-items-center g-5">
+                    <div class="col-12 col-lg-6 order-2 order-lg-1">
+                        <p class="eyebrow dark">OUR STORY</p>
+                        <h2 class="section-title">A modern route through an ancient landscape.</h2>
+                        <p class="text-secondary">
+                            Nomad Trails is a student-made concept for travelers who want to combine
+                            city life with the wide-open spaces of Kazakhstan.
+                        </p>
+                        <p class="text-secondary">
+                            The page intentionally mixes a hand-built responsive section with
+                            Bootstrap-based sections so the two approaches can be compared directly.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2 mt-4">
+                            <span class="badge text-bg-dark p-2">Local routes</span>
+                            <span class="badge text-bg-light border p-2">Flexible plans</span>
+                            <span class="badge text-bg-light border p-2">Open horizons</span>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 order-1 order-lg-2">
+                        <div class="story-panel">
+                            <div class="story-top">
+                                <span>FIELD NOTE / 2026</span>
+                                <span>51° N</span>
+                            </div>
+                            <div class="story-quote">
+                                “The best route is sometimes the one that gives you more sky.”
+                            </div>
+                            <div class="story-bottom">
+                                <span>STEPPE</span>
+                                <span>•</span>
+                                <span>ROAD</span>
+                                <span>•</span>
+                                <span>HORIZON</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desktop-only utility -->
+                <div class="d-none d-lg-flex justify-content-between align-items-center desktop-tip mt-5">
+                    <span>Desktop view includes the expanded route note.</span>
+                    <span class="text-uppercase small">Scroll to explore ↓</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- TASK 2: Bootstrap cards, 1/2/3 responsive columns -->
+        <section id="experiences" class="experiences-section">
+            <div class="container py-5">
+                <div class="text-center section-heading bootstrap-heading">
+                    <p class="eyebrow dark">TASK 2 • BOOTSTRAP GRID + COMPONENTS</p>
+                    <h2>Choose your kind of adventure.</h2>
+                    <p class="mx-auto">The cards below use Bootstrap's responsive columns: 1 on phone, 2 on tablet and 3 on laptop.</p>
+                </div>
+
+                <div class="row g-4 mt-2">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 experience-card border-0 shadow-sm">
+                            <div class="experience-icon">🧭</div>
+                            <div class="card-body p-4">
+                                <h3 class="h4">Weekend Explorer</h3>
+                                <p class="text-secondary">A compact route for travelers who want a strong first impression without a long itinerary.</p>
+                                <a href="#faq" class="stretched-link">Build the route</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 experience-card border-0 shadow-sm">
+                            <div class="experience-icon">🥾</div>
+                            <div class="card-body p-4">
+                                <h3 class="h4">Mountain Escape</h3>
+                                <p class="text-secondary">Slow mornings, hiking trails and cool air around the lakes and foothills.</p>
+                                <a href="#faq" class="stretched-link">Build the route</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100 experience-card border-0 shadow-sm">
+                            <div class="experience-icon">📷</div>
+                            <div class="card-body p-4">
+                                <h3 class="h4">Photo Road Trip</h3>
+                                <p class="text-secondary">Chase unusual rock shapes, dramatic horizons and changing light across the country.</p>
+                                <a href="#faq" class="stretched-link">Build the route</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TASK 2: Bootstrap accordion component -->
+        <section id="faq" class="faq-section">
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-9">
+                        <div class="text-center mb-4">
+                            <p class="eyebrow dark">QUICK FAQ</p>
+                            <h2 class="section-title">Before you take the road.</h2>
+                        </div>
+
+                        <div class="accordion shadow-sm" id="travelFaq">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+                                        How should I plan a short trip?
+                                    </button>
+                                </h2>
+                                <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#travelFaq">
+                                    <div class="accordion-body">
+                                        Choose one main region and leave some time between major stops.
+                                        A smaller route usually creates a more relaxed trip.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+                                        What is the idea behind Nomad Trails?
+                                    </button>
+                                </h2>
+                                <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#travelFaq">
+                                    <div class="accordion-body">
+                                        It is a fictional travel-guide concept created for this responsive web design assignment.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+                                        Why are two responsive techniques used?
+                                    </button>
+                                </h2>
+                                <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#travelFaq">
+                                    <div class="accordion-body">
+                                        The assignment requires one section to use hand-written mobile-first media
+                                        queries and the rest of the page to use Bootstrap, making a direct comparison possible.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-strip d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-3 mt-5">
+                            <div>
+                                <span class="small text-uppercase">Ready to go?</span>
+                                <strong>Pick a direction and start exploring.</strong>
+                            </div>
+                            <a class="btn btn-dark" href="#home">Back to top ↑</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container py-4 d-flex flex-column flex-md-row justify-content-between gap-2">
+            <span>© 2026 Nomad Trails</span>
+            <span>Responsive Web Design • Assignment #3</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3 JS bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
