@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
@@ -9,7 +11,7 @@
 
     <title>Nomad Trails | Kazakhstan Travel Guide</title>
 
-    <!-- Bootstrap 5.3 -->
+    <!-- Bootstrap 5.3 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
           rel="stylesheet">
 
@@ -17,16 +19,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
-    <!-- ================= NAVBAR ================= -->
+    <!-- =========================
+         NAVBAR
+         ========================= -->
 
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top site-nav">
+
         <div class="container">
 
             <a class="navbar-brand fw-bold" href="#home">
                 NOMAD TRAILS
             </a>
+
 
             <button class="navbar-toggler"
                     type="button"
@@ -37,42 +44,59 @@
                     aria-label="Toggle navigation">
 
                 <span class="navbar-toggler-icon"></span>
+
             </button>
+
 
             <div class="collapse navbar-collapse" id="mainNav">
 
                 <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="#home">
+                            Home
+                        </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#destinations">Destinations</a>
+                        <a class="nav-link" href="#destinations">
+                            Destinations
+                        </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#story">Our Story</a>
+                        <a class="nav-link" href="#story">
+                            Our Story
+                        </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#experiences">Experiences</a>
+                        <a class="nav-link" href="#experiences">
+                            Experiences
+                        </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#faq">FAQ</a>
+                        <a class="nav-link" href="#faq">
+                            FAQ
+                        </a>
                     </li>
 
                 </ul>
 
             </div>
+
         </div>
+
     </nav>
 
 
     <main>
 
-        <!-- ================= HERO ================= -->
+
+        <!-- =========================
+             HERO SECTION
+             ========================= -->
 
         <section id="home" class="hero-section">
 
@@ -80,66 +104,98 @@
 
                 <div class="row align-items-center g-4 min-vh-75">
 
+
+                    <!-- Hero text -->
+
                     <div class="col-12 col-lg-7 order-2 order-lg-1">
 
                         <p class="eyebrow mb-3">
                             KAZAKHSTAN • BEYOND THE ORDINARY
                         </p>
 
+
                         <h1 class="display-3 fw-bold">
+
                             Follow the horizon.
                             <br>
-                            <span>Find your route.</span>
+
+                            <span>
+                                Find your route.
+                            </span>
+
                         </h1>
 
+
                         <p class="lead hero-copy mt-4">
-                            A compact guide to dramatic landscapes, modern cities
-                            and unforgettable nomad-inspired experiences across Kazakhstan.
+
+                            A compact guide to dramatic landscapes,
+                            modern cities and unforgettable
+                            nomad-inspired experiences across Kazakhstan.
+
                         </p>
+
 
                         <div class="d-flex flex-wrap gap-3 mt-4">
 
                             <a class="btn btn-light btn-lg px-4"
                                href="#destinations">
+
                                 Explore places
+
                             </a>
+
 
                             <a class="btn btn-outline-light btn-lg px-4"
                                href="#experiences">
+
                                 See experiences
+
                             </a>
 
                         </div>
 
-                        <!-- Mobile-only element -->
+
+                        <!-- Visible only on smaller screens -->
+
                         <p class="small mobile-note d-lg-none mt-4 mb-0">
-                            Tip for phone users: use the menu button above
-                            to jump between sections.
+
+                            Tip for phone users:
+                            use the menu button above to jump between sections.
+
                         </p>
 
                     </div>
 
 
+                    <!-- Hero image -->
+
                     <div class="col-12 col-lg-5 order-1 order-lg-2">
 
-                        <div class="hero-art"
-                             aria-label="Illustration of mountains and the steppe">
+                        <div class="hero-art">
 
-                            <div class="sun"></div>
+                            <img
+                                src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=85"
+                                alt="Mountain landscape representing Kazakhstan"
+                                class="hero-photo"
+                            >
 
-                            <div class="mountain mountain-back"></div>
 
-                            <div class="mountain mountain-front"></div>
+                            <div class="hero-overlay"></div>
 
-                            <div class="steppe-line"></div>
 
                             <div class="hero-badge">
 
-                                <span>01</span>
+                                <span>
+                                    01
+                                </span>
 
-                                <strong>Open skies</strong>
+                                <strong>
+                                    Open skies
+                                </strong>
 
-                                <small>Endless steppe</small>
+                                <small>
+                                    Endless steppe
+                                </small>
 
                             </div>
 
@@ -154,14 +210,16 @@
         </section>
 
 
+
         <!-- =====================================================
              TASK 1
-             HAND-WRITTEN CSS MEDIA QUERIES
+             HAND-WRITTEN MEDIA QUERIES
              ===================================================== -->
 
         <section id="destinations" class="destinations-section">
 
             <div class="custom-container">
+
 
                 <div class="section-heading">
 
@@ -169,16 +227,19 @@
                         TASK 1 • HAND-BUILT RESPONSIVE SECTION
                     </p>
 
+
                     <h2>
                         Places worth taking the long way to.
                     </h2>
 
+
                     <p>
-                        These destination cards use only our own Grid
+                        These destination cards use our own CSS Grid
                         and mobile-first media rules.
                     </p>
 
                 </div>
+
 
 
                 <!-- Custom CSS Grid -->
@@ -194,9 +255,11 @@
 
                             <img
                                 src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1000&q=85"
-                                alt="Rocky landscape representing Charyn Canyon">
+                                alt="Rocky landscape representing Charyn Canyon"
+                            >
 
                         </div>
+
 
                         <div class="destination-content">
 
@@ -204,14 +267,17 @@
                                 01
                             </span>
 
+
                             <h3>
                                 Charyn Canyon
                             </h3>
 
+
                             <p>
-                                Layered red cliffs, wide trails and a landscape
-                                that feels almost unreal.
+                                Layered red cliffs, wide trails and a
+                                landscape that feels almost unreal.
                             </p>
+
 
                             <a href="#experiences">
                                 Discover →
@@ -220,6 +286,7 @@
                         </div>
 
                     </article>
+
 
 
                     <!-- Destination 2 -->
@@ -230,9 +297,11 @@
 
                             <img
                                 src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=1000&q=85"
-                                alt="Mountain lake landscape representing Big Almaty Lake">
+                                alt="Mountain lake landscape representing Big Almaty Lake"
+                            >
 
                         </div>
+
 
                         <div class="destination-content">
 
@@ -240,14 +309,17 @@
                                 02
                             </span>
 
+
                             <h3>
                                 Big Almaty Lake
                             </h3>
 
+
                             <p>
-                                High-altitude mountain scenery with clear water
-                                and quiet alpine air.
+                                High-altitude mountain scenery with
+                                clear water and quiet alpine air.
                             </p>
+
 
                             <a href="#experiences">
                                 Discover →
@@ -256,6 +328,7 @@
                         </div>
 
                     </article>
+
 
 
                     <!-- Destination 3 -->
@@ -266,9 +339,11 @@
 
                             <img
                                 src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1000&q=85"
-                                alt="Desert landscape representing Mangystau">
+                                alt="Desert landscape representing Mangystau"
+                            >
 
                         </div>
+
 
                         <div class="destination-content">
 
@@ -276,14 +351,17 @@
                                 03
                             </span>
 
+
                             <h3>
                                 Mangystau
                             </h3>
 
+
                             <p>
-                                Strange rock formations, open desert and enormous
-                                skies on the Caspian side.
+                                Strange rock formations, open desert
+                                and enormous skies on the Caspian side.
                             </p>
+
 
                             <a href="#experiences">
                                 Discover →
@@ -292,6 +370,7 @@
                         </div>
 
                     </article>
+
 
 
                     <!-- Destination 4 -->
@@ -302,9 +381,11 @@
 
                             <img
                                 src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1000&q=85"
-                                alt="Modern city skyline representing Astana">
+                                alt="Modern city skyline representing Astana"
+                            >
 
                         </div>
+
 
                         <div class="destination-content">
 
@@ -312,14 +393,17 @@
                                 04
                             </span>
 
+
                             <h3>
                                 Astana
                             </h3>
 
+
                             <p>
-                                Bold architecture, wide avenues and a
-                                fast-changing capital in the steppe.
+                                Bold architecture, wide avenues and
+                                a fast-changing capital in the steppe.
                             </p>
+
 
                             <a href="#experiences">
                                 Discover →
@@ -328,6 +412,7 @@
                         </div>
 
                     </article>
+
 
 
                     <!-- Destination 5 -->
@@ -338,9 +423,11 @@
 
                             <img
                                 src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1000&q=85"
-                                alt="Mountain forest landscape representing Kolsai Lakes">
+                                alt="Mountain forest landscape representing Kolsai Lakes"
+                            >
 
                         </div>
+
 
                         <div class="destination-content">
 
@@ -348,14 +435,17 @@
                                 05
                             </span>
 
+
                             <h3>
                                 Kolsai Lakes
                             </h3>
+
 
                             <p>
                                 Forest-covered mountains and cool lakes
                                 connected by scenic hiking routes.
                             </p>
+
 
                             <a href="#experiences">
                                 Discover →
@@ -364,6 +454,7 @@
                         </div>
 
                     </article>
+
 
 
                     <!-- Destination 6 -->
@@ -374,9 +465,11 @@
 
                             <img
                                 src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1000&q=85"
-                                alt="Wide open landscape representing the Kazakh steppe">
+                                alt="Wide open landscape representing the Kazakh steppe"
+                            >
 
                         </div>
+
 
                         <div class="destination-content">
 
@@ -384,14 +477,17 @@
                                 06
                             </span>
 
+
                             <h3>
                                 Nomad Steppe
                             </h3>
+
 
                             <p>
                                 Open grasslands, traditional hospitality
                                 and a slower rhythm under the sky.
                             </p>
+
 
                             <a href="#experiences">
                                 Discover →
@@ -401,6 +497,7 @@
 
                     </article>
 
+
                 </div>
 
             </div>
@@ -408,7 +505,10 @@
         </section>
 
 
-        <!-- ================= OUR STORY ================= -->
+
+        <!-- =========================
+             OUR STORY
+             ========================= -->
 
         <section id="story" class="story-section">
 
@@ -416,27 +516,37 @@
 
                 <div class="row align-items-center g-5">
 
+
                     <div class="col-12 col-lg-6 order-2 order-lg-1">
 
                         <p class="eyebrow dark">
                             OUR STORY
                         </p>
 
+
                         <h2 class="section-title">
                             A modern route through an ancient landscape.
                         </h2>
 
-                        <p class="text-secondary">
-                            Nomad Trails is a student-made concept for travelers
-                            who want to combine city life with the wide-open
-                            spaces of Kazakhstan.
-                        </p>
 
                         <p class="text-secondary">
-                            The page intentionally mixes a hand-built responsive
-                            section with Bootstrap-based sections so the two
-                            approaches can be compared directly.
+
+                            Nomad Trails is a student-made concept
+                            for travelers who want to combine city
+                            life with the wide-open spaces of Kazakhstan.
+
                         </p>
+
+
+                        <p class="text-secondary">
+
+                            The page intentionally mixes a hand-built
+                            responsive section with Bootstrap-based
+                            sections so the two approaches can be
+                            compared directly.
+
+                        </p>
+
 
                         <div class="d-flex flex-wrap gap-2 mt-4">
 
@@ -457,6 +567,7 @@
                     </div>
 
 
+
                     <div class="col-12 col-lg-6 order-1 order-lg-2">
 
                         <div class="story-panel">
@@ -473,10 +584,14 @@
 
                             </div>
 
+
                             <div class="story-quote">
-                                “The best route is sometimes the one
-                                that gives you more sky.”
+
+                                “The best route is sometimes
+                                the one that gives you more sky.”
+
                             </div>
+
 
                             <div class="story-bottom">
 
@@ -497,8 +612,11 @@
 
                 <!-- Desktop-only element -->
 
-                <div class="d-none d-lg-flex justify-content-between
-                            align-items-center desktop-tip mt-5">
+                <div class="d-none d-lg-flex
+                            justify-content-between
+                            align-items-center
+                            desktop-tip
+                            mt-5">
 
                     <span>
                         Desktop view includes the expanded route note.
@@ -515,6 +633,7 @@
         </section>
 
 
+
         <!-- =====================================================
              TASK 2
              BOOTSTRAP GRID + CARDS
@@ -524,22 +643,28 @@
 
             <div class="container py-5">
 
+
                 <div class="text-center section-heading bootstrap-heading">
 
                     <p class="eyebrow dark">
                         TASK 2 • BOOTSTRAP GRID + COMPONENTS
                     </p>
 
+
                     <h2>
                         Choose your kind of adventure.
                     </h2>
 
+
                     <p class="mx-auto">
-                        The cards below use Bootstrap's responsive columns:
-                        1 on phone, 2 on tablet and 3 on laptop.
+
+                        The cards below use Bootstrap's responsive
+                        columns: 1 on phone, 2 on tablet and 3 on laptop.
+
                     </p>
 
                 </div>
+
 
 
                 <div class="row g-4 mt-2">
@@ -552,13 +677,16 @@
                         <div class="card h-100 experience-card
                                     border-0 shadow-sm">
 
+
                             <div class="experience-image">
 
                                 <img
                                     src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=85"
-                                    alt="Mountain landscape for Weekend Explorer">
+                                    alt="Mountain landscape for Weekend Explorer"
+                                >
 
                             </div>
+
 
                             <div class="card-body p-4">
 
@@ -566,15 +694,21 @@
                                     Weekend Explorer
                                 </h3>
 
+
                                 <p class="text-secondary">
+
                                     A compact route for travelers who want
-                                    a strong first impression without
-                                    a long itinerary.
+                                    a strong first impression without a
+                                    long itinerary.
+
                                 </p>
+
 
                                 <a href="#faq"
                                    class="stretched-link">
+
                                     Build the route
+
                                 </a>
 
                             </div>
@@ -582,6 +716,7 @@
                         </div>
 
                     </div>
+
 
 
                     <!-- Experience 2 -->
@@ -591,13 +726,16 @@
                         <div class="card h-100 experience-card
                                     border-0 shadow-sm">
 
+
                             <div class="experience-image">
 
                                 <img
                                     src="https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&w=1000&q=85"
-                                    alt="Mountain trail for Mountain Escape">
+                                    alt="Mountain trail for Mountain Escape"
+                                >
 
                             </div>
+
 
                             <div class="card-body p-4">
 
@@ -605,14 +743,20 @@
                                     Mountain Escape
                                 </h3>
 
+
                                 <p class="text-secondary">
+
                                     Slow mornings, hiking trails and cool
                                     air around the lakes and foothills.
+
                                 </p>
+
 
                                 <a href="#faq"
                                    class="stretched-link">
+
                                     Build the route
+
                                 </a>
 
                             </div>
@@ -620,6 +764,7 @@
                         </div>
 
                     </div>
+
 
 
                     <!-- Experience 3 -->
@@ -629,13 +774,16 @@
                         <div class="card h-100 experience-card
                                     border-0 shadow-sm">
 
+
                             <div class="experience-image">
 
                                 <img
                                     src="https://images.unsplash.com/photo-1452780212940-6f5c0d14d848?auto=format&fit=crop&w=1000&q=85"
-                                    alt="Travel photography landscape for Photo Road Trip">
+                                    alt="Travel photography landscape for Photo Road Trip"
+                                >
 
                             </div>
+
 
                             <div class="card-body p-4">
 
@@ -643,15 +791,21 @@
                                     Photo Road Trip
                                 </h3>
 
+
                                 <p class="text-secondary">
+
                                     Chase unusual rock shapes, dramatic
                                     horizons and changing light across
                                     the country.
+
                                 </p>
+
 
                                 <a href="#faq"
                                    class="stretched-link">
+
                                     Build the route
+
                                 </a>
 
                             </div>
@@ -660,6 +814,7 @@
 
                     </div>
 
+
                 </div>
 
             </div>
@@ -667,7 +822,10 @@
         </section>
 
 
-        <!-- ================= FAQ ================= -->
+
+        <!-- =========================
+             FAQ / ACCORDION
+             ========================= -->
 
         <section id="faq" class="faq-section">
 
@@ -677,17 +835,20 @@
 
                     <div class="col-12 col-lg-9">
 
+
                         <div class="text-center mb-4">
 
                             <p class="eyebrow dark">
                                 QUICK FAQ
                             </p>
 
+
                             <h2 class="section-title">
                                 Before you take the road.
                             </h2>
 
                         </div>
+
 
 
                         <div class="accordion shadow-sm"
@@ -713,6 +874,7 @@
 
                                 </h2>
 
+
                                 <div id="faqOne"
                                      class="accordion-collapse collapse show"
                                      data-bs-parent="#travelFaq">
@@ -729,6 +891,7 @@
                                 </div>
 
                             </div>
+
 
 
                             <!-- FAQ 2 -->
@@ -750,6 +913,7 @@
 
                                 </h2>
 
+
                                 <div id="faqTwo"
                                      class="accordion-collapse collapse"
                                      data-bs-parent="#travelFaq">
@@ -765,6 +929,7 @@
                                 </div>
 
                             </div>
+
 
 
                             <!-- FAQ 3 -->
@@ -786,6 +951,7 @@
 
                                 </h2>
 
+
                                 <div id="faqThree"
                                      class="accordion-collapse collapse"
                                      data-bs-parent="#travelFaq">
@@ -804,14 +970,21 @@
 
                             </div>
 
+
                         </div>
+
 
 
                         <!-- Contact strip -->
 
-                        <div class="contact-strip d-flex flex-column
-                                    flex-sm-row justify-content-between
-                                    align-items-sm-center gap-3 mt-5">
+                        <div class="contact-strip
+                                    d-flex
+                                    flex-column
+                                    flex-sm-row
+                                    justify-content-between
+                                    align-items-sm-center
+                                    gap-3
+                                    mt-5">
 
                             <div>
 
@@ -825,12 +998,16 @@
 
                             </div>
 
+
                             <a class="btn btn-dark"
                                href="#home">
+
                                 Back to top ↑
+
                             </a>
 
                         </div>
+
 
                     </div>
 
@@ -843,13 +1020,19 @@
     </main>
 
 
-    <!-- ================= FOOTER ================= -->
+
+    <!-- =========================
+         FOOTER
+         ========================= -->
 
     <footer class="site-footer">
 
-        <div class="container py-4 d-flex
-                    flex-column flex-md-row
-                    justify-content-between gap-2">
+        <div class="container py-4
+                    d-flex
+                    flex-column
+                    flex-md-row
+                    justify-content-between
+                    gap-2">
 
             <span>
                 © 2026 Nomad Trails
@@ -864,8 +1047,10 @@
     </footer>
 
 
+
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>

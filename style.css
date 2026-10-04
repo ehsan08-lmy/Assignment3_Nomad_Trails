@@ -1,6 +1,5 @@
 /* =========================================================
    NOMAD TRAILS — ASSIGNMENT #3
-   Custom CSS is loaded after Bootstrap.
    ========================================================= */
 
 
@@ -26,10 +25,18 @@ html {
 
 body {
     margin: 0;
+
     color: var(--ink);
+
     background: var(--paper);
-    font-family: Inter, system-ui, -apple-system,
-                 BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+    font-family:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
 }
 
 section {
@@ -81,7 +88,9 @@ section {
 
 .eyebrow {
     letter-spacing: 0.16em;
+
     font-size: 0.75rem;
+
     font-weight: 800;
 }
 
@@ -99,6 +108,7 @@ section {
 
 .hero-copy {
     max-width: 650px;
+
     color: rgba(255, 255, 255, 0.78);
 }
 
@@ -107,90 +117,59 @@ section {
 }
 
 
-/* Hero illustration */
+/* =========================================================
+   HERO PHOTO
+   ========================================================= */
 
 .hero-art {
     position: relative;
+
     min-height: 390px;
+
     overflow: hidden;
 
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.25);
+
     border-radius: 28px;
+
+    background: #345b5b;
+
+    box-shadow:
+        0 25px 60px
+        rgba(0, 0, 0, 0.18);
+}
+
+
+.hero-photo {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+.hero-overlay {
+    position: absolute;
+
+    inset: 0;
 
     background:
         linear-gradient(
             180deg,
-            #345b5b 0%,
-            #71856a 52%,
-            #c6a16c 100%
-        );
-
-    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.18);
-}
-
-.sun {
-    position: absolute;
-
-    width: 100px;
-    height: 100px;
-
-    top: 54px;
-    right: 62px;
-
-    border-radius: 50%;
-
-    background: #e4c78e;
-
-    box-shadow:
-        0 0 55px rgba(228, 199, 142, 0.55);
-}
-
-.mountain {
-    position: absolute;
-
-    left: -8%;
-
-    width: 116%;
-    height: 48%;
-
-    bottom: 18%;
-
-    clip-path:
-        polygon(
-            0 100%,
-            16% 46%,
-            28% 73%,
-            45% 18%,
-            59% 66%,
-            73% 30%,
-            88% 70%,
-            100% 38%,
-            100% 100%
+            rgba(23, 59, 44, 0.05) 0%,
+            rgba(23, 59, 44, 0.18) 45%,
+            rgba(23, 59, 44, 0.72) 100%
         );
 }
 
-.mountain-back {
-    background: #4b6659;
-    opacity: 0.85;
-}
-
-.mountain-front {
-    bottom: 0;
-    height: 58%;
-    background: #263f36;
-}
-
-.steppe-line {
-    position: absolute;
-
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    height: 25%;
-
-    background: #1e382e;
-}
 
 .hero-badge {
     position: absolute;
@@ -198,75 +177,98 @@ section {
     left: 28px;
     bottom: 28px;
 
+    z-index: 2;
+
     display: grid;
+
     gap: 2px;
 
     padding: 16px 18px;
 
-    border: 1px solid rgba(255,255,255,0.2);
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.2);
+
     border-radius: 14px;
 
-    background: rgba(12, 30, 24, 0.62);
+    background:
+        rgba(12, 30, 24, 0.72);
 
     backdrop-filter: blur(8px);
 }
 
+
 .hero-badge span {
     color: #dfc28b;
+
     font-size: 0.72rem;
+
     font-weight: 800;
 }
+
 
 .hero-badge strong {
     font-size: 1.05rem;
 }
 
+
 .hero-badge small {
-    color: rgba(255,255,255,0.68);
+    color: rgba(255, 255, 255, 0.72);
 }
 
 
 /* =========================================================
    TASK 1
-   HAND-WRITTEN RESPONSIVE CSS
+   HAND-WRITTEN MEDIA QUERIES
    ========================================================= */
 
 .destinations-section {
     background: var(--paper);
+
     padding: 80px 0;
 }
 
+
 .custom-container {
     width: 92%;
+
     margin: 0 auto;
 }
+
 
 .section-heading {
     margin-bottom: 36px;
 }
 
+
 .section-heading h2,
 .section-title {
     font-weight: 800;
+
     letter-spacing: -0.03em;
 }
 
+
 .section-heading h2 {
     font-size: 2.35rem;
+
     line-height: 1.05;
+
     margin: 10px 0 14px;
 }
 
+
 .section-heading > p:last-child {
     color: var(--muted);
+
     line-height: 1.7;
 }
 
 
-/* ---------------------------------------------------------
-   Mobile-first:
-   1 item per row
-   --------------------------------------------------------- */
+/* =========================================================
+   TASK 1 — MOBILE FIRST
+   1 CARD PER ROW
+   ========================================================= */
 
 .destination-grid {
     display: grid;
@@ -280,33 +282,40 @@ section {
 .destination-card {
     overflow: hidden;
 
-    border: 1px solid var(--line);
+    border:
+        1px solid
+        var(--line);
+
     border-radius: 18px;
 
     background: #fff;
 
     box-shadow:
-        0 12px 30px rgba(31, 45, 37, 0.07);
+        0 12px 30px
+        rgba(31, 45, 37, 0.07);
 
     transition:
         transform 0.2s ease,
         box-shadow 0.2s ease;
 }
 
+
 .destination-card:hover {
     transform: translateY(-4px);
 
     box-shadow:
-        0 18px 38px rgba(31, 45, 37, 0.12);
+        0 18px 38px
+        rgba(31, 45, 37, 0.12);
 }
 
 
-/* Destination images */
+/* Destination photos */
 
 .destination-visual {
     min-height: 220px;
 
     display: flex;
+
     align-items: center;
     justify-content: center;
 
@@ -315,8 +324,10 @@ section {
     overflow: hidden;
 }
 
+
 .destination-visual img {
     width: 100%;
+
     height: 220px;
 
     display: block;
@@ -327,12 +338,12 @@ section {
         transform 0.4s ease;
 }
 
-.destination-card:hover .destination-visual img {
+
+.destination-card:hover
+.destination-visual img {
     transform: scale(1.05);
 }
 
-
-/* Image background colors */
 
 .visual-1 {
     background: #9a6248;
@@ -365,14 +376,17 @@ section {
     padding: 22px;
 }
 
+
 .card-number {
     color: #78877b;
 
     font-size: 0.72rem;
+
     font-weight: 800;
 
     letter-spacing: 0.14em;
 }
+
 
 .destination-content h3 {
     margin: 7px 0 8px;
@@ -380,90 +394,108 @@ section {
     font-size: 1.25rem;
 }
 
+
 .destination-content p {
     color: var(--muted);
 
     font-size: 0.93rem;
+
     line-height: 1.6;
 
     margin-bottom: 14px;
 }
 
+
 .destination-content a {
     color: var(--forest);
 
     font-size: 0.88rem;
+
     font-weight: 800;
 
     text-decoration: none;
 }
 
 
-/* ---------------------------------------------------------
-   FIRST BREAKPOINT
-   Tablet:
-   2 items per row
-   --------------------------------------------------------- */
+/* =========================================================
+   TASK 1 — TABLET
+   2 CARDS PER ROW
+   ========================================================= */
 
 @media (min-width: 576px) {
 
     .destination-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+            repeat(2, 1fr);
 
         gap: 24px;
     }
+
 
     .section-heading {
         margin-bottom: 44px;
     }
 
+
     .destination-visual,
     .destination-visual img {
         height: 200px;
+
         min-height: 200px;
     }
+
 }
 
 
-/* ---------------------------------------------------------
-   SECOND BREAKPOINT
-   Laptop:
-   3 items per row
-   --------------------------------------------------------- */
+/* =========================================================
+   TASK 1 — LAPTOP
+   3 CARDS PER ROW
+   ========================================================= */
 
 @media (min-width: 992px) {
 
     .destination-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns:
+            repeat(3, 1fr);
 
         gap: 28px;
     }
+
 
     .section-heading h2 {
         font-size: 3.1rem;
     }
 
+
     .destinations-section {
         padding: 104px 0;
     }
 
+
     .destination-visual,
     .destination-visual img {
         height: 225px;
+
         min-height: 225px;
     }
+
 }
 
 
 /* =========================================================
-   TASK 2 — BOOTSTRAP SUPPORTING STYLES
+   STORY SECTION
    ========================================================= */
 
 .story-section {
     background: #fff;
 
-    border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
+    border-top:
+        1px solid
+        var(--line);
+
+    border-bottom:
+        1px solid
+        var(--line);
 }
 
 
@@ -471,7 +503,9 @@ section {
     min-height: 360px;
 
     display: flex;
+
     flex-direction: column;
+
     justify-content: space-between;
 
     padding: 28px;
@@ -493,20 +527,23 @@ section {
         );
 
     box-shadow:
-        0 22px 55px rgba(20, 48, 36, 0.15);
+        0 22px 55px
+        rgba(20, 48, 36, 0.15);
 }
 
 
 .story-top,
 .story-bottom {
     display: flex;
+
     justify-content: space-between;
 
     gap: 14px;
 
-    color: rgba(255,255,255,0.62);
+    color: rgba(255, 255, 255, 0.62);
 
     font-size: 0.72rem;
+
     font-weight: 800;
 
     letter-spacing: 0.12em;
@@ -516,7 +553,8 @@ section {
 .story-quote {
     max-width: 470px;
 
-    font-size: clamp(2rem, 5vw, 3.4rem);
+    font-size:
+        clamp(2rem, 5vw, 3.4rem);
 
     line-height: 0.98;
 
@@ -531,14 +569,16 @@ section {
 
     font-size: 0.82rem;
 
-    border-top: 1px solid var(--line);
+    border-top:
+        1px solid
+        var(--line);
 
     padding-top: 18px;
 }
 
 
 /* =========================================================
-   BOOTSTRAP EXPERIENCE CARDS
+   TASK 2 — BOOTSTRAP CARDS
    ========================================================= */
 
 .experiences-section {
@@ -550,11 +590,12 @@ section {
     max-width: 760px;
 
     margin-left: auto;
+
     margin-right: auto;
 }
 
 
-/* Actual card images */
+/* Experience card */
 
 .experience-card {
     border-radius: 18px;
@@ -563,10 +604,13 @@ section {
         transform 0.2s ease;
 }
 
+
 .experience-card:hover {
     transform: translateY(-4px);
 }
 
+
+/* Experience images */
 
 .experience-image {
     height: 190px;
@@ -574,8 +618,10 @@ section {
     overflow: hidden;
 }
 
+
 .experience-image img {
     width: 100%;
+
     height: 100%;
 
     display: block;
@@ -586,7 +632,9 @@ section {
         transform 0.4s ease;
 }
 
-.experience-card:hover .experience-image img {
+
+.experience-card:hover
+.experience-image img {
     transform: scale(1.05);
 }
 
@@ -630,11 +678,15 @@ section {
 .contact-strip {
     padding: 20px 22px;
 
-    border: 1px solid var(--line);
+    border:
+        1px solid
+        var(--line);
+
     border-radius: 16px;
 
     background: #fff;
 }
+
 
 .contact-strip strong {
     display: block;
@@ -648,7 +700,7 @@ section {
    ========================================================= */
 
 .site-footer {
-    color: rgba(255,255,255,0.65);
+    color: rgba(255, 255, 255, 0.65);
 
     background: #15271f;
 
@@ -657,7 +709,7 @@ section {
 
 
 /* =========================================================
-   SMALL SCREEN REFINEMENT
+   MOBILE REFINEMENT
    ========================================================= */
 
 @media (max-width: 575.98px) {
@@ -666,9 +718,11 @@ section {
         font-size: 2.7rem;
     }
 
+
     .hero-art {
         min-height: 300px;
     }
+
 
     .destinations-section,
     .story-section,
@@ -677,7 +731,9 @@ section {
         padding-top: 10px;
     }
 
+
     .experience-image {
         height: 210px;
     }
+
 }
